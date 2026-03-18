@@ -1,1 +1,156 @@
-
+<!doctype html>
+<html lang = "en US">
+    <head>
+        <title>
+        Outcome Memories
+        </title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Outcome Memories fan page">
+        <meta name="author" content="Josh B/MilkThai">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            @font-face {
+                font-family: sonicheroes;
+                src: url(SpecialElite-Regular.woff);
+            }
+            @font-face{
+                font-family: sa2;
+                src: url(vipnagorgialla\ bd.woff);
+            }
+            @font-face{
+                font-family: sa1;
+                src: url(Impress\ BT\ Regular.woff);
+            }
+        body {
+            background-color: #3a1313; 
+            color:#920808
+        }
+        img {
+            margin-left: auto; 
+            margin-right: auto; 
+            display: block;
+        }
+        div {
+            width: 1000px; 
+            margin: 1rem auto; 
+            text-align: center;
+        }
+        /* made the font important because I want it to be the default font for all p in the div
+        Also fills out combinators and decendents*/
+        div p{
+            color: rgb(151, 59, 59); 
+            font-family: sa1 !important;
+        }
+        div > h1{
+            color: rgb(240, 6, 6); 
+            font-family: sa2
+        }
+        div > h2{
+            font-family: sa2
+        }
+        header {
+            background-color: #490606; 
+            padding: 1rem; 
+            text-align: center;
+        }
+        main {
+            background-color: #1d0101; 
+            padding: 1rem; 
+            text-align: center;
+        }
+        footer {
+            color: rgb(179, 51, 94); 
+            text-align: center; 
+            background-image: url("https://cdn2.steamgriddb.com/hero_thumb/6e25311b3767a24ebc35c93bbd290cea.jpg"); 
+            background-repeat: no-repeat; 
+            background-size: cover
+        }
+        footer > p{
+            background-color:#3a1313
+        }
+        /* all the link code*/
+        a {
+            color:#1ea0bd; 
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        /*psuedoclasses*/
+        a:hover{
+            color:aquamarine
+        }
+        a:visited{
+            color:plum
+        }
+        /* Attribute selectors*/
+        a[target = "_blank"]{
+            color:#741a1a; 
+            background-color:#1d0101
+        }
+        /*psuedoclasses & attribute selectors*/
+        a[target = "_blank"]:hover{
+            color:aquamarine; 
+            background-color:#1d0101
+        }
+        a[target = "_blank"]:visited{
+            color:palevioletred; 
+            background-color:#1d0101
+        }
+        /*class selector*/
+        .opinion{
+            color:#741a1a
+        }
+        /*ID selector*/
+        #playmygame{
+            color:#741a1a; 
+            font-family: sonicheroes; 
+            font-size: xx-large;
+        }
+        /*nth of type requirement*/
+        li:nth-of-type(2n + 1){
+            color:#1ea0bd
+        }
+        </style>
+    </head>
+    <body>
+        <header>
+            <img src = "https://cdn2.steamgriddb.com/logo/426803d1d79908279d00bebaa4d6e180.png" alt = "OM_Logo" width = 600>
+            <!--nav requirement-->
+            <nav>
+                <a href = "https://milkteathaitea.github.io/TCD-CIS-WebDev/module01/declaration.html">Other Project: Declaration</a>
+                <br>
+                <a href = "https://milkteathaitea.github.io/TCD-CIS-WebDev/module04/index.html"> Other Project: Fix that Page </a>
+            </nav>
+        </header>
+        <main>
+            <div>
+                <h1>Background</h1>
+                <p>Outcome Memories was an asymmetrical survival horror game based on the old internet creepypasta "Sonic.exe" <br>(and a few other Sonic creepypastas).
+                It was created as a passion project that eventually was cancelled <br>due to controversies and rude fans. <br>
+                However, the game is still being updated, with the final batch being released sometime in the future</p>
+            </div>
+            <div class = "opinion">
+                <h2>Author's Opinion</h2>
+                <p>This game has been my addiction for the past several months. It's been a lot of fun, messing around with people<br>
+                and getting to know others. The game is also just fun to play, despite the weird jank from the engine being Roblox. <br>
+                Overall, it's just been a good time, despite all the controversy and bugs in the game</p>
+            </div>
+            <div>
+                <h1>Features:</h1>
+                <ul class = "opinion">
+                    <li>9 Survivors, all with unique strengths and weaknesses</li>
+                    <li>4 EXEcutioners, each with different skills</li>
+                    <li>6 maps, from Green Hill to X's Castle</li>
+                    <li>Cosmetics!</li>
+                    <li>Emotes!</li>
+                    <li>The Master Plan! <br> <img src = "https://media.tenor.com/cavwyqGKQgMAAAAM/masterplan-eggman.gif" alt = "masterplan"></li>
+                    <br>
+                    <li>And more!</li>
+                </ul>
+            </div>
+        </main>
+        <footer>
+            <br>
+            <a id = "playmygame" href = "https://www.roblox.com/games/14608970270/Outcome-Memories-v0-2" target = "_blank">Play his Game <img src = "https://static.wikia.nocookie.net/the-unofficial-outcome-memories/images/8/86/2011Xrender2.png" alt = "2011xPlayMyGame"></a>
+            <p>© SEGA. All rights reserved. Sonic is a registered trademark or trademark of SEGA Corporation</p>
+        </footer>
+    </body>
+  </html>
